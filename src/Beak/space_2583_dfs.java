@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class space_2667_dfs {
+public class space_2583_dfs {
     static  int [][]map_real;
     static int count[];
     static int idx=0;
