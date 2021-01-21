@@ -11,6 +11,7 @@ public class aprt_2667 {
     static int dx []={1,-1,0,0}; // x축 이동 방향!
     static int dy []={0,0,1,-1};// y축 이동 방향!
 
+
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
