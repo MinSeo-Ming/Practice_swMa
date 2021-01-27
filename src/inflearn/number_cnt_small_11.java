@@ -1,0 +1,25 @@
+package inflearn;
+
+import java.util.Scanner;
+
+public class number_cnt_small_11 {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int cnt =0;
+        while (num>0){
+            if(num>9){
+                int temp = num;
+                while (temp>0){
+                    cnt++;
+                    temp =temp/10;
+                }
+            }
+            else{
+                cnt++;
+            }
+            num--;
+        }
+        System.out.println(cnt);
+    }
+}
