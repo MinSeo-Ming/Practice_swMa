@@ -16,7 +16,10 @@ public class diskcontrol {
     public static int solution(int[][] jobs) {
         int answer = 0;
         int temp_e=jobs[1][1], temp_r1=0;
-        for(int i=0; i< jobs.length-1; i++){
+        int end =jobs.length;
+        int i=0;
+       while (end>0){
+           end--;
             answer += jobs[i][1];
             for(int j = i+1; j<jobs.length; j++){
                 if(temp_e>jobs[j][1]&&answer>=jobs[j][0]) {
@@ -24,9 +27,10 @@ public class diskcontrol {
                     temp_r1 =j;
                 }
             }
-            System.out.println(answer);
-            System.out.println(temp_r1+" "+temp_e);
-            answer += temp_e+answer - temp_r1;
+            end--;
+            int a =answer - temp_r1;
+            answer += temp_e+a;
+            i++;
         }
         return answer;
     }
