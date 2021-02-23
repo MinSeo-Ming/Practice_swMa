@@ -14,7 +14,6 @@ public class travel {
         
         return answer;
     }
-    static dfs(String)
 }
 /*
 case : [[ICN, A], [A, C], [A, D], [D, B], [B, A]]
